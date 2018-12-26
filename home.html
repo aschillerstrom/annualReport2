@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>AustinMuniCtAnnualReport</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src='https://code.jquery.com/jquery.js'></script>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300,100' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.10.9/sass.js" integrity="sha256-smv2juIoY9DmXLFAbTYqSr5Unynas4yWESknh+qjqww=" crossorigin="anonymous"></script>
+      
+   
+</head>
+
+
+<!--CSS-->
+<style>
+  html {
+    background-color: #2f4f4f;
+  }
+  
+  .infographic-title {
+    font-size: 46px;
+    display: inline-block;
+    line-height: 32px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    margin-top: 25px;
+
+}
+.infographic-title .inner-title {
+	color: #86bd27;
+	display: inline-block;
+	letter-spacing: -2.5px;
+	text-align: left;
+}
+.infographic-title .inner-title span {
+	padding-left: 60px;
+	padding-right: 10px;
+}
+.infographic-title .inner-title strong {
+	padding-right: 10px;
+}
+.infographic {
+	margin-top: 50px;
+  text-align: center;
+  transition: all 0.75s ease-in-out;
+}
+.infographic img {
+	display: none;
+}
+.infographic .item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-right: 25px;
+  padding: 20px;
+  width: 270px;
+  height: 500px;
+  list-style: none;
+  line-height: 100px;
+  text-align: left;
+  font-size: 160%;
+  color: #555;
+  /*position: absolute;*/
+  position: relative;
+  transition: all 0.75s ease;
+  background: #fff;
+  z-index: 1;
+}
+.infographic .item:after {
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.infographic .item1 {
+  top: -20px;
+  z-index: 4;
+}
+.infographic .item1:after {
+  background-image: url(https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg);
+}
+.infographic .item2 {
+  margin-left: -30px;
+  top: -80px;
+  z-index: 3;
+}
+.infographic .item2:after {
+  background-image: url(https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg);
+}
+.infographic .item3 {
+  margin-left: -30px;
+  top: 10px;
+  z-index: 2;
+}
+.infographic .item3:after {
+  background-image: url(https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg);
+}
+.infographic .item4 {
+  margin-left: -30px;
+  top: -30px;
+  z-index: 1;
+}
+.infographic .item4:after {
+  background-image: url(https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg);
+}
+.infographic .item5 {
+  margin-left: -30px;
+  top: 20px;
+  z-index: 2;
+}
+.infographic .item5:after {
+  background-image: url(https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg);
+}
+
+
+
+.infographic .uppercase {
+  color: #00d5fc;
+  text-transform: uppercase;
+}
+.infographic .lowercase {
+  color: #00d5fc;
+  text-transform: lowercase;
+}
+
+.infographic .item span {
+	bottom: -10px;
+	position: absolute;
+	transition: all 0.1s ease-in-out;
+	z-index: 9;
+	font-size: 20px;
+	font-weight: bold;
+}
+.infographic .item span.uppercase {
+  bottom: -25px;
+}
+.infographic .item object {
+  display: none;
+  font-size: 16px;
+  position: absolute;
+  line-height: 25px;
+  padding: 40px 10px 10px 10px;
+}
+
+.infographic .item:hover {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 40px;
+  top: 10px;
+  z-index: 4;
+}
+.infographic .item1:hover,
+.infographic .item2:hover,
+.infographic .item3:hover,
+.infographic .item4:hover {
+  margin-left: 0px;
+  margin-right: 60px;
+}
+.infographic .item5:hover,
+.infographic .item6:hover,
+.infographic .item7:hover,
+.infographic .item8:hover {
+  margin-left: 0px;
+  margin-right: 60px;
+}
+.infographic .item:hover:after {
+  opacity: 0;
+}
+.infographic .item:hover > object {
+  display: block;
+}
+.infographic .item:hover > .lowercase {
+  bottom: 56%;
+  color: #6c6c6c;
+  font-size: 16px;
+  font-weight: 100;
+  left: 10px;
+}
+.infographic .item:hover > .uppercase {
+  bottom: 80%;
+  color: #6c6c6c;
+  font-size: 18px;
+  left: 10px;
+  letter-spacing: -1px;
+}
+
+.btn {
+  background-color: #86bd27;
+  color: black;
+}
+
+
+
+
+</style>
+
+<!--page-->
+
+<div class="infographic-title"><span class="inner-title"><strong>Austin</strong>Municipal<br><span>Court</span><strong>2018</strong></span></div>
+
+<!-- Modal Trigger -->
+<div class="row">
+    <div class = "col m12 center-align">
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Letter from the Court</a>
+    </div>
+   
+    
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Letter from the Court</h4>
+    <p>A bunch of text or image of letter</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<br><br>
+
+<ul class="infographic">
+  <li href="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg" class="item item1 et_pb_lightbox_image">
+    
+    <span class="uppercase">Community</span>
+    <object data="" type="" class="hidden">
+        DL Clinics <br> Mobile court
+    </object>
+  </li>
+  <li href="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg" class="item item2 et_pb_lightbox_image">
+    <img src="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg">
+    
+    <span class="uppercase">opportunity</span>
+    <object data="" type="" class="hidden">Deferrals <br>extensions <br>keeping off record</object>
+  </li>
+  <li href="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg" class="item item3 et_pb_lightbox_image">
+    <img src="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg">
+    
+    <span class="uppercase">Understanding</span>
+    <object data="" type="" class="hidden">
+      Community Service, payment plans, JOs, surcharge waiver
+    </object>
+  </li>
+  <li href="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg" class="item item4 et_pb_lightbox_image">
+    <img src="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg">
+   
+    <span class="uppercase">responsibility</span>
+    <object data="" type="" class="hidden">
+      Compliance dismissals, DSC, code/health
+    </object>
+  </li>
+  
+  <li href="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg" class="item item5 et_pb_lightbox_image">
+    <img src="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg">
+    
+    <span class="uppercase">trust</span>
+    <object data="" type="" class="hidden">
+      Sally's page
+    </object>
+  </li>
+  
+</ul>
+
+<script>
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+
+</html>

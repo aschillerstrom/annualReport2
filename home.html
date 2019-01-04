@@ -23,7 +23,7 @@
 <!--CSS-->
 <style>
   html {
-    background-color: #2f4f4f;
+    background-color: #026670;
   }
   
   .infographic-title {
@@ -39,7 +39,7 @@
 
 }
 .infographic-title .inner-title {
-	color: #86bd27;
+	color: #fce181;
 	display: inline-block;
 	letter-spacing: -2.5px;
 	text-align: left;
@@ -60,23 +60,23 @@
 	display: none;
 }
 .infographic .item {
-  background-color: #fff;
+  background-color: #edeae5;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   display: inline-block;
   margin-right: 25px;
   padding: 20px;
   width: 270px;
-  height: 500px;
+  height: 550px;
   list-style: none;
   line-height: 100px;
   text-align: left;
   font-size: 160%;
-  color: #555;
+  color: black;
   /*position: absolute;*/
   position: relative;
   transition: all 0.75s ease;
-  background: #fff;
+  background: #edeae5;
   z-index: 1;
 }
 .infographic .item:after {
@@ -136,11 +136,11 @@
 
 
 .infographic .uppercase {
-  color: #00d5fc;
+  color: #026670;
   text-transform: uppercase;
 }
 .infographic .lowercase {
-  color: #00d5fc;
+  color: #026670;
   text-transform: lowercase;
 }
 
@@ -160,12 +160,12 @@
   font-size: 16px;
   position: absolute;
   line-height: 25px;
-  padding: 40px 10px 10px 10px;
+  padding: 30px 10px 10px 10px;
 }
 
 .infographic .item:hover {
   cursor: pointer;
-  background-color: #fff;
+  background-color: #edeae5;
   padding: 40px;
   top: 10px;
   z-index: 4;
@@ -173,17 +173,15 @@
 .infographic .item1:hover,
 .infographic .item2:hover,
 .infographic .item3:hover,
-.infographic .item4:hover {
+.infographic .item4:hover,
+.infographic .item5:hover {
   margin-left: 0px;
   margin-right: 60px;
+  height: 700px;
+  width: 30%;
+  z-index: 5;
 }
-.infographic .item5:hover,
-.infographic .item6:hover,
-.infographic .item7:hover,
-.infographic .item8:hover {
-  margin-left: 0px;
-  margin-right: 60px;
-}
+
 .infographic .item:hover:after {
   opacity: 0;
 }
@@ -192,25 +190,33 @@
 }
 .infographic .item:hover > .lowercase {
   bottom: 56%;
-  color: #6c6c6c;
+  color: #026670;
   font-size: 16px;
   font-weight: 100;
   left: 10px;
 }
 .infographic .item:hover > .uppercase {
-  bottom: 80%;
-  color: #6c6c6c;
+  bottom: 90%;
+  color: #026670;
   font-size: 18px;
   left: 10px;
   letter-spacing: -1px;
 }
 
 .btn {
-  background-color: #86bd27;
+  background-color: #fef9cd;
   color: black;
 }
 
+.btn:hover{
+  background-color: #fce181;
+}
 
+strategicOutcome {
+  color: #026670;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
 
 
 </style>
@@ -222,7 +228,7 @@
 <!-- Modal Trigger -->
 <div class="row">
     <div class = "col m12 center-align">
-      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Letter from the Court</a>
+      <a class="waves-effect waves-orange btn modal-trigger" href="#modal1">Letter from the Court</a>
     </div>
    
     
@@ -253,7 +259,8 @@
     <img src="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg">
     
     <span class="uppercase">opportunity</span>
-    <object data="" type="" class="hidden">Deferrals <br>extensions <br>keeping off record</object>
+    <object data="" type="" class="hidden">
+      <p>Promoting <strategicOutcome> economic opportunity,</strategicOutcome> the Court offers options to allow citizens to keep a clean criminal record.  In 2018, the Court processed: </p>Deferrals <br>extensions <br>keeping off record</object>
   </li>
   <li href="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg" class="item item3 et_pb_lightbox_image">
     <img src="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg">
@@ -263,6 +270,8 @@
       Community Service, payment plans, JOs, surcharge waiver
     </object>
   </li>
+  </ul>
+  <ul class = "infographic">
   <li href="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg" class="item item4 et_pb_lightbox_image">
     <img src="https://i.ibb.co/cwj7yvM/east-austin-1400-block-larry-moore-0.jpg">
    
@@ -277,7 +286,16 @@
     
     <span class="uppercase">trust</span>
     <object data="" type="" class="hidden">
-      Sally's page
+        <p>Ensuring <strategicOutcome>SAFETY, LIFELONG LEARNING,</strategicOutcome> and a<strategicOutcome> government THAT WORKS FOR ALL</strategicOutcome>, community outreach is a focal point of the Court.<br><br>
+        - Provided Alive@25 and the Basic Traffic classes to over 200 youth</p>
+        - Taught importance of traffic safety at city-wide summer camps<br><br>
+        - Partnered with AustinCorps to provide an overview of court operations and the importance of traffic safety laws to high school students<br><br>
+        - Distributed traffic safety materials to over 300 citizens during National Night Out events <br><br>
+        - Partnered with Texas A & M Agri-life Extension Program to provide distracted driving simulation<br><br>
+        - Partnered with Austin Police Department's Police Activity League and the Texas Municipal Court Education Center to create driving course using the STAR Cart and Impaired Driving goggles <br><br>
+
+    
+      
     </object>
   </li>
   
@@ -286,6 +304,7 @@
 <script>
   $(document).ready(function(){
     $('.modal').modal();
+    
   });
 </script>
 

@@ -28,8 +28,8 @@
 <!-- Modal Trigger for Letter to Court -->
 <div class="row">
     <div class = "col m12 center-align">
-      <a class="waves-effect letterBtn modal-trigger" href="#modal1">
-        Letter from the Court
+      <a class="waves-effect letterBtn modal-trigger infographic-title inner-title" href="#modal1">
+        <strong>Letter from the Court</strong>
       </a>
     </div>   
 </div>
@@ -377,19 +377,45 @@
     left: 10px;
     letter-spacing: -1px;
   }
-  
-  .letterBtn {
-    background-color: #fef9cd;
-    color: #026670;
-    width: 400px;
-    height: 30px;
-    font-size: 20px;
-  }
+  .letterBtn{
+  background:#026670;
+  color:#fce181;
+  border:none;
+  position:relative;
+  height:60px;
+  width: 500px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.letterBtn:hover{
+  background:#026670;
+  color:#fce181;
+}
+.letterBtn:before,letterBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #fce181;
+  transition:400ms ease all;
+}
+.letterBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.letterBtn:hover:before,letterBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
 
-  .letterBtn:hover{
-    cursor: pointer;
-    background-color: #fce181;
-  }
+  
   .btn {
     background-color: #7b0303;
     color: #fef9cd;

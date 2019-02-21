@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.10.9/sass.js" integrity="sha256-smv2juIoY9DmXLFAbTYqSr5Unynas4yWESknh+qjqww=" crossorigin="anonymous"></script>
-      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
    
 </head>
 
@@ -38,8 +40,32 @@
 <!--Modal for Letter-->
 <div id="modal1" class="modal">
   <div class="modal-content">
-    <iframe src="https://www.htmlpublish.com/newTestDocStorage/DocStorage/1236149904/bcl_1236149904.pdf"  width="750px" height="470px";
-    ></iframe>
+    <h4>Letter from the Court</h4>
+    <p>Austin Municipal Court’s mission is <italics>to impartially administer justice in a fair and efficient manner so that trust and accountability are exemplified to the public we serve.</italics>  It, along with the City’s aspiration to be the best managed city in the country, has created an environment of innovation and continuous improvement.
+    </p>
+    <p>In fiscal year 2018, the Court processed approximately <bolded>239,367</bolded> new cases, disposed <bolded>263,035</bolded> cases, engaged in more than a dozen community outreach events, and managed more than <bolded>550,515</bolded> transactions in person, via web, phone, email, and mail across three locations.</p>
+    <p>The judiciary strives to rigorously preserve, protect, and defend the constitution and laws of the United States, the State of Texas, and the City of Austin.  Our judges are some of the most experienced in the state and are often called upon for knowledge and advice by municipal judges from across Texas.</p>
+    <p>The administrative and support staff are dedicated to providing exceptional customer service to our citizens and other stakeholders.  We foster a culture of open communication and the solicitation of input and feedback, which enables us to implement operational improvements geared towards transparency and equitable outcomes.
+      </p>
+    <p>Together, we work hard to provide a fair and impartial forum for individuals to answer charges filed against them.  We are proud of our accomplishments and each other’s contributions.
+      </p>
+    <p><bolded>The Way Ahead</bolded></p>
+    <p>Over the next couple of years, Austin Municipal Court will focus its resources on the following initiatives that are designed to increase access to justice, reduce barriers to successful compliance with court orders, and provide a safe, healthy, and stable environment for staff and citizens:
+      </p>
+    <ul class="circles">
+      <li>- Continuation of mobile court events that “take the court to the community”</li>
+    <br><li>- Relocation of the downtown court (main location) to Southeast Austin</li>
+    <br><li>- Identification for new location for the Downtown Community Court (DACC)</li>
+    <br><li>- Identification for permanent municipal court locations in the northern and southern regions of the City </li>
+    <br><li>- New case management system that will improve technology and efficiencies throughout the Court</li>
+    <br><li>- Public education on the importance of traffic safety through community outreach events</li>
+    <br><li>- Transparency and accountability through open data initiatives which increase public access to information</li>
+    </ul>
+    <ul class="squares">
+    <li><a href="http://www.ci.austin.tx.us/budget/eperf/index.cfm"> Austin Municipal Court's Performance Measures</a></li>
+    <li><a href="https://data.austintexas.gov/"> City of Austin's Open Data Portal</a></li>
+    </ul>
+    <a href="https://ibb.co/syR1C98"><img src="https://i.ibb.co/PwjWMGq/letter-Photo2.png" alt="letter-Photo2" border="0"></a>
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-close waves-effect btn-flat">Close</a>
@@ -464,13 +490,27 @@
 
   }
 
+  italics {
+    font-style: italic;
+  }
+
+  bolded {
+    font-weight: bold;
+  }
   .modal-content p{
     font-size: 20px;
   }
 
-  #modal1 {
-    height: 1000px !important;
-    width:  800px !important;
+  ul.circles {
+    list-style-type:circle;
+    font-size: 20px;
+    margin-left: 10%;
+  }
+
+  ul.squares {
+    margin-left: 20%;
+    list-style-type:square;
+    font-size: 20px;
     
   }
 
@@ -482,6 +522,8 @@
   </style>
 
 <script>
+
+  
   $(document).ready(function(){
     $('.modal').modal();
     

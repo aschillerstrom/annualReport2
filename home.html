@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
 
     <title>AustinMuniCtAnnualReport2018</title>
+
+<link rel="icon" type="image/png" href="https://i.ibb.co/hBJshSM/favicon-16x16.png" sizes="16x16" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width= device-width, initial-scale=1">
     <script src='https://code.jquery.com/jquery.js'></script>
@@ -25,12 +27,12 @@
 <body>
 <!--page-->
 
-<div class="infographic-title"><span class="inner-title"><strong>Austin</strong>Municipal<br><span>Court</span><strong>2018</strong></span></div>
+<div class="courtTab-title"><span class="inner-title"><strong>Austin</strong>Municipal<br><span>Court</span><strong>2018</strong></span></div>
 
 <!-- Modal Trigger for Letter to Court -->
 <div class="row">
     <div class = "col m12 center-align">
-      <a class="waves-effect letterBtn modal-trigger infographic-title2 inner-title" href="#modal1">
+      <a class="waves-effect letterBtn modal-trigger courtTab-title2 inner-title" href="#modal1">
         <strong>Letter from the Court</strong>
       </a>
     </div>   
@@ -182,7 +184,7 @@
 
 <br><br>
 
-<ul class="infographic">
+<ul class="courtTab">
   <li class="item item1">
     
     <span class="uppercase"><firstLetter>C</firstLetter>ommunity</span>
@@ -260,7 +262,7 @@
       background-color: #026670;
     }
     
-    .infographic-title {
+    .courtTab-title {
       font-size: 46px;
       display: inline-block;
       line-height: 32px;
@@ -272,13 +274,13 @@
       margin-top: 25px;
   
   }
-  .infographic-title .inner-title {
+  .courtTab-title .inner-title {
     color: #fce181;
     display: inline-block;
     letter-spacing: -2.5px;
     text-align: left;
   }
-  .infographic-title2 {
+  .courtTab-title2 {
       font-size: 46px;
       display: inline-block;
       line-height: 32px;
@@ -290,28 +292,28 @@
       margin-top: 0px;
   
   }
-  .infographic-title2 .inner-title {
+  .courtTab-title2 .inner-title {
     color: #fce181;
     display: inline-block;
     letter-spacing: -2.5px;
     text-align: left;
   }
-  .infographic-title .inner-title span {
+  .courtTab-title .inner-title span {
     padding-left: 60px;
     padding-right: 10px;
   }
-  .infographic-title .inner-title strong {
+  .courtTab-title .inner-title strong {
     padding-right: 10px;
   }
-  .infographic {
+  .courtTab {
     margin-top: 50px;
     text-align: center;
     transition: all 0.75s ease-in-out;
   }
-  .infographic img {
+  .courtTab img {
     display: none;
   }
-  .infographic .item {
+  .courtTab .item {
     background-color: #edeae5;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
@@ -331,7 +333,7 @@
     background: #edeae5;
     z-index: 1;
   }
-  .infographic .item:after {
+  .courtTab .item:after {
     background-position: left top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -345,59 +347,59 @@
     width: 100%;
   }
   
-  .infographic .item1 {
+  .courtTab .item1 {
     top: -20px;
     z-index: 4;
   }
-  .infographic .item1:after {
+  .courtTab .item1:after {
     background-image: url(https://i.ibb.co/SJZf6Pn/fullsizeoutput-3.jpg);
   
   }
-  .infographic .item2 {
+  .courtTab .item2 {
     margin-left: -30px;
     top: -80px;
     z-index: 3;
   }
-  .infographic .item2:after {
+  .courtTab .item2:after {
     background-image: url(https://i.ibb.co/tYwcDCm/Court10.jpg);
   }
-  .infographic .item3 {
+  .courtTab .item3 {
     margin-left: -30px;
     top: 10px;
     z-index: 2;
   }
-  .infographic .item3:after {
+  .courtTab .item3:after {
     background-image: url(https://i.ibb.co/t40JG1V/Annual-Rpt5.jpg);
   }
-  .infographic .item4 {
+  .courtTab .item4 {
     margin-left: -30px;
     top: -30px;
     z-index: 1;
   }
-  .infographic .item4:after {
+  .courtTab .item4:after {
     background-image: url(https://i.ibb.co/DKRTJqX/Congress-And-Bats9.jpg);
   }
-  .infographic .item5 {
+  .courtTab .item5 {
     margin-left: -30px;
     top: 20px;
     z-index: 2;
   }
-  .infographic .item5:after {
+  .courtTab .item5:after {
     background-image: url(https://i.ibb.co/smy5VRZ/Summer-Outreach-2018-4.jpg);
   }
   
   
   
-  .infographic .uppercase {
+  .courtTab .uppercase {
     color: #026670;
     text-transform: uppercase;
   }
-  .infographic .lowercase {
+  .courtTab .lowercase {
     color: #026670;
     text-transform: lowercase;
   }
   
-  .infographic .item span {
+  .courtTab .item span {
     bottom: -10px;
     position: absolute;
     transition: all 0.1s ease-in-out;
@@ -405,10 +407,10 @@
     font-size: 20px;
     font-weight: bold;
   }
-  .infographic .item span.uppercase {
+  .courtTab .item span.uppercase {
     bottom: -25px;
   }
-  .infographic .item object {
+  .courtTab .item object {
     display: none;
     font-size: 16px;
     position: absolute;
@@ -416,18 +418,18 @@
     padding: 30px 10px 10px 10px;
   }
   
-  .infographic .item:hover {
+  .courtTab .item:hover {
    
     background-color: #edeae5;
     padding: 40px;
     top: 10px;
     z-index: 4;
   }
-  .infographic .item1:hover,
-  .infographic .item2:hover,
-  .infographic .item3:hover,
-  .infographic .item4:hover,
-  .infographic .item5:hover {
+  .courtTab .item1:hover,
+  .courtTab .item2:hover,
+  .courtTab .item3:hover,
+  .courtTab .item4:hover,
+  .courtTab .item5:hover {
     margin-left: 0px;
     margin-right: 60px;
     height: 500px;
@@ -435,20 +437,20 @@
     z-index: 5;
   }
   
-  .infographic .item:hover:after {
+  .courtTab .item:hover:after {
     opacity: 0;
   }
-  .infographic .item:hover > object {
+  .courtTab .item:hover > object {
     display: block;
   }
-  .infographic .item:hover > .lowercase {
+  .courtTab .item:hover > .lowercase {
     bottom: 56%;
     color: #026670;
     font-size: 16px;
     font-weight: 100;
     left: 10px;
   }
-  .infographic .item:hover > .uppercase {
+  .courtTab .item:hover > .uppercase {
     bottom: 80%;
     color: #026670;
     font-size: 18px;
